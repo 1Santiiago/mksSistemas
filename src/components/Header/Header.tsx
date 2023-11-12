@@ -1,6 +1,8 @@
+
 import * as c from "./style";
-import Vector from '../img/Vector.svg'
-function Header() {
+import Vector from '../img/Vector.svg';
+
+function Header({ onToggleSidebar }) {
   return (
     <c.Header>
       <div>
@@ -9,7 +11,9 @@ function Header() {
         </c.H1>
       </div>
       <c.divCart>
-        <img src={Vector}alt="" />
+        <button onClick={onToggleSidebar}>
+          <img src={Vector} alt="" />
+        </button>
         <span>0</span>
       </c.divCart>
     </c.Header>

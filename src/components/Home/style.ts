@@ -5,6 +5,8 @@ export const allContainers = styled.div`
   max-width: 1020px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 5rem auto;
+  gap: 2rem;
+  margin: 14rem auto;
+  justify-content: center;
+
 `;

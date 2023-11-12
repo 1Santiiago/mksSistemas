@@ -9,7 +9,7 @@ export const Header = styled.header`
   height: 6.3rem;
   align-items: center;
 `
-export const  H1 =styled.h1`
+export const H1 = styled.h1`
 color: var(--color-two);
 font-size: 2.5rem;
 font-style: normal;
@@ -21,7 +21,7 @@ line-height: 1.1875rem;
 }
 `
 
-export const divCart=styled.div`
+export const divCart = styled.div`
 width: 5.625rem;
 height: 2.8125rem;
 background-color: var(--color-two);
@@ -29,6 +29,12 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 border-radius: 0.5rem;
+
+>button{border:0;
+  background:none;
+  cursor: pointer;
+}
+
 
 >span{
 color: #000;

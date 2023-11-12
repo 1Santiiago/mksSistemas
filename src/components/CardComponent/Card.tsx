@@ -4,10 +4,8 @@ function Card() {
   return (
     <c.Container>
       <c.Img></c.Img>
-      <c.containerTitlePrice>
-        <c.H2>Apple Watch Series 4 GPS</c.H2>
-        <c.Span>R$1999</c.Span>
-      </c.containerTitlePrice>
+      <c.H2>Apple Watch Series 4 GPS</c.H2>
+      <c.Span>R$199</c.Span>
       <c.P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</c.P>
       <c.Button>
         <img src={shoppingBag} alt="" />
