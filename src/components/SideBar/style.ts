@@ -9,6 +9,27 @@ export const Aside = styled.aside`
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
  
 
+`
+
+export const containerSide = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+
+  >h2{
+    color: var(--color-two);
+    font-size: 2.4rem;
+  }
+
+  >svg{
+    width:2.74rem;
+    height:2.74rem;
+    background-color: #000;
+    color: var(--color-two);
+    border-radius: 0.2rem;
+  }
 `

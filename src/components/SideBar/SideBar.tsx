@@ -1,12 +1,15 @@
-import * as c from './style'
+import * as c from './style';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-function SideBar(onToggleSidebar) {
+function SideBar() {
   return (
     <c.Aside>
-        <h1>Carrinho de Compras</h1>
-        <p onClick={onToggleSidebar}>fechar</p>
+      <c.containerSide>
+        <h2>Carrinho <br />de compras</h2>
+       <AiOutlineCloseCircle  />
+      </c.containerSide>
     </c.Aside>
-  )
+  );
 }
 
-export default SideBar
+export default SideBar;
