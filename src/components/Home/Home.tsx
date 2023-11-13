@@ -8,11 +8,11 @@ export default function Home() {
   interface Product {
     name: string;
     price: number;
-    thumbnailUrl: void;
- 
+    thumbnail: void;
+    title: string;
   }
 
-  const [prod, setProd] = useState<Product[]>([])
+  const [prod, setProd] = useState<Product[]>([]);
 
   const query = "";
 
@@ -28,7 +28,7 @@ export default function Home() {
 
       const data = await response.json();
       console.log("Dados recuperados com sucesso:", data.results);
-      setProd(data.results)
+      setProd(data.results);
     } catch (error:any) {
       console.error("Erro ao recuperar os dados:", error.message);
     }
@@ -47,9 +47,14 @@ export default function Home() {
     <>
       <Header onToggleSidebar={handleToggleSidebar} />
       <c.allContainers>
-       {prod.map((produto, id) =>(
-        <Card key={id} title={produto.title} price={produto.price} photo={produto.thumbnail}/>
-       ))}
+        {prod.map((produto, id) => (
+          <Card
+            key={id}
+            title={produto.title}
+            price={produto.price}
+            photo={produto.thumbnail}
+          />
+        ))}
       </c.allContainers>
       {isSidebarOpen && <SideBar />}
       <Footer />
