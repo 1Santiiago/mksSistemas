@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import apple from "../img/apple-watch.png";
 export const Container = styled.div`
   width: 20rem;
   height: 21rem;
@@ -7,20 +6,22 @@ export const Container = styled.div`
   background: var(--color-two);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.22);
   position: relative;
-  padding: 0.9rem 0;
+
 `;
 export const Img = styled.img`
-
-
+  margin: 1rem auto;
+  display: block;
+  padding: 0.2rem;
 `;
 
 export const containerTitlePrice = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
-  text-align: center;
   line-height: 0%.1rem;
+  padding: 0 2%;
+  gap: 2rem;
 `;
 
 export const H2 = styled.h2`
@@ -29,6 +30,7 @@ export const H2 = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: 1.1875rem;
+  width: 29rem;
 `;
 export const Button = styled.button`
   border: 0;
@@ -47,16 +49,15 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
+// export const P = styled.p`
+//   width: 100%;
+//   margin-top: 1rem;
+//   height: 1.5625rem;
+//   text-align: center;
+// `;
 export const P = styled.p`
-  width: 100%;
-  margin-top: 1rem;
-  height: 1.5625rem;
-  text-align: center;
-`;
-export const Span = styled.span`
   display: flex;
-  justify-content: center;
-  width: 4rem;
+  width: 3rem;
   height: 2rem;
   border-radius: 0.3125rem;
   background: #373737;

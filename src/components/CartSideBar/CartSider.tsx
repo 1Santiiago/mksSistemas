@@ -1,18 +1,23 @@
+import React from "react";
 import * as c from "./style";
-import apple from "../img/apple-watch.png";
-import { Span } from "../CardComponent/style";
-function CartSider() {
+import { P } from "../CardComponent/style";
+
+interface CartSiderProps {
+  title: string;
+  price: string;
+  photo: string;
+}
+
+const CartSider: React.FC<CartSiderProps> = ({ title, price, photo }) => {
   return (
     <c.ContainerSide>
       <c.CaixaItem>
-        <c.Img src={apple} alt="" />
+        <c.Img src={photo} alt="" />
       </c.CaixaItem>
       <c.CaixaItem>
-        <c.Title>
-          Apple Watch <br /> Series 4 GPS
-        </c.Title>
+        <c.Title>{title}</c.Title>
       </c.CaixaItem>
-        <Span style={{ background: "none", color: "#000" }}>R$199</Span>
+      <P style={{ background: "none", color: "#000" }}>{price}</P>
     </c.ContainerSide>
   );
 }

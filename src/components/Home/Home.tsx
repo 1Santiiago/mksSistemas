@@ -7,19 +7,22 @@ import * as c from "./style";
 export default function Home() {
   interface Product {
     name: string;
-    price: number;
-    thumbnail: void;
+    price: string;
+    thumbnail: string;
     title: string;
   }
 
   const [prod, setProd] = useState<Product[]>([]);
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 8;
+  const query = "Iphone 15";
 
-  const query = "";
-
-  const getProd = async (searchQuery: string) => {
+  const getProd = async (searchQuery: string, pageNumber: number) => {
     try {
       const response = await fetch(
-        `https://api.mercadolibre.com/sites/MLB/search?q=${searchQuery}?limit=8`
+        `https://api.mercadolibre.com/sites/MLB/search?q=${searchQuery}&limit=${itemsPerPage}&offset=${
+          (pageNumber - 1) * itemsPerPage
+        }`
       );
 
       if (!response.ok) {
@@ -35,8 +38,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-    getProd(query);
-  }, []);
+    getProd(query, page);
+  }, [query, page]);
 
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
