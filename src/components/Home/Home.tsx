@@ -58,6 +58,8 @@ export default function Home() {
             photo={produto.thumbnail}
           />
         ))}
+
+        {console.log(setPage)}
       </c.allContainers>
       {isSidebarOpen && <SideBar />}
       <Footer />
