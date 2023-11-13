@@ -1,8 +1,12 @@
-
+// Header.jsx
 import * as c from "./style";
 import Vector from '../img/Vector.svg';
 
-function Header({ onToggleSidebar }) {
+interface HeaderProps {
+  onToggleSidebar: () => void; 
+}
+
+function Header({ onToggleSidebar }: HeaderProps) {
   return (
     <c.Header>
       <div>
