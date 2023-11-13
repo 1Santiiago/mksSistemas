@@ -16,3 +16,28 @@ export const footerSide = styled.footer`
     line-height: 9.9375rem; 
   }
 `;
+
+export const Box = styled.div`
+  position: absolute;
+  width: 100%;
+  bottom:10rem ;
+`
+
+export const totalFooter = styled.div`
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+bottom: 10rem;
+align-items: center;
+font-weight: 700;
+
+font-size: 1.75rem;
+>h2{
+    color: var(--color-two);
+
+}
+>span{
+  color: var(--color-two);
+}
+
+`

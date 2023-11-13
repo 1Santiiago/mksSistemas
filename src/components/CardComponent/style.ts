@@ -8,27 +8,20 @@ export const Container = styled.div`
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.22);
   position: relative;
   padding: 0.9rem 0;
-  
 `;
-export const Img = styled.div`
-  background-image: url(${apple});
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height:9rem;
+export const Img = styled.img`
+
 
 `;
-
 
 export const containerTitlePrice = styled.div`
-    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 3rem;
-    text-align: center;
-    line-height: 0%.1rem;
-`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 0%.1rem;
+`;
 
 export const H2 = styled.h2`
   color: #2c2c2c;
@@ -36,7 +29,6 @@ export const H2 = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: 1.1875rem;
-
 `;
 export const Button = styled.button`
   border: 0;
@@ -49,7 +41,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:0.8rem;
+  gap: 0.8rem;
   text-transform: uppercase;
   height: 2rem;
   cursor: pointer;
@@ -59,16 +51,16 @@ export const P = styled.p`
   width: 100%;
   margin-top: 1rem;
   height: 1.5625rem;
-  text-align: center
+  text-align: center;
 `;
 export const Span = styled.span`
-display: flex;
-justify-content: center;
-width: 4rem;
-height: 2rem;
-border-radius: 0.3125rem;
-background: #373737;
-color: var(--color-two);
-align-items: center;
-font-weight: bold;
-`
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.3125rem;
+  background: #373737;
+  color: var(--color-two);
+  align-items: center;
+  font-weight: bold;
+`;

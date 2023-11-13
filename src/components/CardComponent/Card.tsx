@@ -1,12 +1,18 @@
 import * as c from "./style";
 import shoppingBag from "../img/shopping-bag.svg";
-function Card() {
+
+interface CardProps {
+  title: string;
+  price: string; //
+}
+
+function Card({ title, price, photo }: CardProps) {
   return (
     <c.Container>
-      <c.Img></c.Img>
-      <c.H2>Apple Watch Series 4 GPS</c.H2>
-      <c.Span>R$199</c.Span>
-      <c.P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</c.P>
+      <c.Img src={photo} />
+
+      <c.H2>{title}</c.H2>
+      <c.Span>{price}</c.Span>
       <c.Button>
         <img src={shoppingBag} alt="" />
         Comprar

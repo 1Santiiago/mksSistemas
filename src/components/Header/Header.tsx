@@ -11,7 +11,7 @@ function Header({ onToggleSidebar }: HeaderProps) {
     <c.Header>
       <div>
         <c.H1>
-          MSK <sub>Sistemas</sub>
+          San <sub>Sistemas</sub>
         </c.H1>
       </div>
       <c.divCart>
